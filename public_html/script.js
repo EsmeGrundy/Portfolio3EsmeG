@@ -11,7 +11,8 @@ $("document").ready(function() {
 
     $("#alertButton").bind("click", alertButtonClick);
     $("#chelsea").bind("mouseover", mouseOverMe)
-            .bind("mouseout", mouseOutMe);
+            .bind("mouseout", mouseOutMe)
+            .bind("click", mouseClick);
 
     $("#replaceHTML").bind("click", replaceHTML);
     $("#addPara").bind("click", addPara);
@@ -20,6 +21,11 @@ $("document").ready(function() {
     $("#hideLogo").bind("click", hideLogo);
     $("#showLogo").bind("click", showLogo);
     $("#highLogo").bind("click", highLogo);
+    
+    $("#essay > p").hide();
+    $("#essay h4").click(function (){
+        
+    });
 
 });
 
@@ -37,8 +43,12 @@ function mouseOutMe()
     $("#first").html("You left my logo");
 }
 
+function mouseClick(){
+    $("#first").html("<h1>Click!</h1>")
+        }
+
 function replaceHTML() {
-    $("#h3Tag").html("<h6>New H6 Tag!!!!!</h6>");
+    $("#h3Tag").html("<h1>New H1 Tag!!!!!</h1>");
 }
 
 function addPara() {
