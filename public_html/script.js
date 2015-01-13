@@ -11,7 +11,7 @@ $("document").ready(function() {
     $("#slide").css({"position": "relative", "height": "200px", "width": "200px"});
     $("#slide div").css({"position": "absolute", "z-index": "0"});
     $("#slide div.prev").css({"z-index": "1"});
-    4("#slide div.active").css({"z-index": "2"});
+    $("#slide div.active").css({"z-index": "2"});
 
     $("#alertButton").bind("click", alertButtonClick);
     $("#chelsea").bind("mouseover", mouseOverMe)
@@ -28,6 +28,14 @@ $("document").ready(function() {
     
    $("#essay").accordion({header: "h4"});
    setInterval("slide()", 2000);
+   
+   $("a#1_img").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
 
 });
 
