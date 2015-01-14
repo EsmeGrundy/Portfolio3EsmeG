@@ -36,6 +36,8 @@ $("document").ready(function() {
 		'speedOut'		:	200, 
 		'overlayShow'	:	false
 	});
+        
+        $("#cursor").bind("click", changeCursor);
 
 });
 
@@ -91,5 +93,9 @@ function slide(){
     next.css({opacity: 0.0}).addClass("active").animate({opacity: 1.0}, 2000, function(){
         current.removeClass("prev");
     });
+}
+
+function changeCursor(){
+    $("body").css({"cursor": "url('http://fc05.deviantart.net/fs71/f/2012/003/a/2/icon_chopper_by_nikitt11-d4l5rnb.gif'), default"});
 }
 
