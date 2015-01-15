@@ -5,6 +5,7 @@
  */
 
 $("document").ready(function() {
+   // $(".fancybox").fancybox();
     $(".class1").css("color", "orange");
     $("div p:last-child").css("background-color", "yellow");
     $("#chelsea").css({"width": "400px", "height": "auto"});
@@ -37,7 +38,7 @@ $("document").ready(function() {
 		'overlayShow'	:	false
 	});
         
-        $("#cursor").bind("click", changeCursor);
+//        $("#cursor").bind("click", changeCursor);
 
 });
 
@@ -95,7 +96,7 @@ function slide(){
     });
 }
 
-function changeCursor(){
-    $("body").css({"cursor": "url('http://fc05.deviantart.net/fs71/f/2012/003/a/2/icon_chopper_by_nikitt11-d4l5rnb.gif'), default"});
-}
+//function changeCursor(){
+//    $(".cursor").css("cursor": "url('')","default");
+//}
 

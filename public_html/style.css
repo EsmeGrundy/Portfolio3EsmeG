@@ -40,16 +40,16 @@
     transform: rotateY(180deg);
 }
 
-body {
+.cursor {
     cursor: url('http://fc05.deviantart.net/fs71/f/2012/003/a/2/icon_chopper_by_nikitt11-d4l5rnb.gif'), default;
 }
 
-#linkNudge a{
+#linkNudge{
     cursor: pointer;
     transition: padding-left 250ms ease-out;
 }
 
-#linkNudge a:hover{
-    padding-left: 20px;
+#linkNudge:hover{
+    padding-left: 30px;
 }
 
